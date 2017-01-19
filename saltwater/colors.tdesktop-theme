@@ -21,57 +21,73 @@
 // |-background.jpg (or tiled.jpg, background.png, tiled.png)
 //
 
-// Solarized color scheme from:    http://ethanschoonover.com/solarized
-base03:                            #002B36;
-base02:                            #073642;
-base01:                            #586E75;
-base00:                            #657B83;
-base0:                             #839496;
-base1:                             #93A1A1;
-base2:                             #EEE8D5;
-base3:                             #FDF6E3;
-yellow:                            #B58900;
-orange:                            #cb4b16;
-red:                               #DC322F;
-magenta:                           #D33682;
-violet:                            #6C71C4;
-blue:                              #268BD2;
-cyan:                              #2AA198;
-green:                             #859900;
+// Oceanic Next color scheme by voronianski
+// https://github.com/voronianski/oceanic-next-color-scheme
 
-// Common Colors
+base00:                            #1B2B34;
+base01:                            #343D46;
+base02:                            #4F5B66;
+base03:                            #65737E;
+base04:                            #A7ADBA;
+base05:                            #C0C5CE;
+base06:                            #CDD3DE;
+base07:                            #D8DEE9;
+
+base08:                            #EC5f67;
+base09:                            #F99157;
+base0A:                            #FAC863;
+base0B:                            #99C794;
+base0C:                            #5FB3B3;
+base0D:                            #6699CC;
+base0E:                            #C594C5;
+base0F:                            #AB7967;
+
+red:                               base08;
+orange:                            base09;
+yellow:                            base0A;
+green:                             base0B;
+cyan:                              base0C;
+blue:                              base0D;
+violet:                            base0E;
+magenta:                           base0F;
+
+// Aliases and Common Colors
+
+brown:                             magenta;                 // Oceanic Next's magenta is not at all magenta-y
 white:                             #ffffff;
 
-windowBg:                          base03;                  // Window backgrounds
-windowFg:                          base0;                   // Main text / chat text
-windowBgOver:                      base03;                  // Search bar background
-nullWindowBgOver:                  base03;                  // Title bar / Mouse over backgrounds, etc
-windowBgRipple:                    base01;                  // Mouse click chats list background
+// Telegram Theme
+
+windowBg:                          base00;                  // Window backgrounds
+windowFg:                          base04;                  // Main text / chat text
+windowBgOver:                      base00;                  // Search bar background
+nullWindowBgOver:                  base00;                  // Title bar / Mouse over backgrounds, etc
+windowBgRipple:                    base02;                  // Mouse click chats list background
 windowFgOver:                      windowFg;
-windowSubTextFg:                   base0;                   // Chats list message preview text
-windowSubTextFgOver:               base1;                   // Mouse over chats list message preview text
-windowBoldFg:                      base1;                   // Chats list chat name text
-windowBoldFgOver:                  base2;                   // Mouse over chats list chat name text
+windowSubTextFg:                   base04;                  // Chats list message preview text
+windowSubTextFgOver:               base05;                  // Mouse over chats list message preview text
+windowBoldFg:                      base05;                  // Chats list chat name text
+windowBoldFgOver:                  base06;                  // Mouse over chats list chat name text
 windowBgActive:                    blue;                    // Active button background
-windowFgActive:                    base2;                   // Active selected chats list text / button text
+windowFgActive:                    base06;                  // Active selected chats list text / button text
 windowActiveTextFg:                blue;                    // Online status, links, recording cancel, etc
-windowShadowFg:                    base03;                  // Window border shadows
-windowShadowFgFallback:            base01;                  // Notification border
+windowShadowFg:                    base00;                  // Window border shadows
+windowShadowFgFallback:            base02;                  // Notification border
 shadowFg:                          #93a1a155;               // Internal border shadows
 slideFadeOutBg:                    #0000003c;
 slideFadeOutShadowFg:              #000000;                 // Window slide animation shadow
 imageBg:                           #000000;
 imageBgTransparent:                #555555;
-activeButtonBg:                    base01;                  // Currently selected button background
+activeButtonBg:                    base02;                  // Currently selected button background
 activeButtonBgOver:                blue;                    // Mouse over currently selected button background
 activeButtonBgRipple:              windowBgRipple;          // Mouse click currently selected button background
 activeButtonFg:                    windowFgActive;          // Currently selected button text
 activeButtonFgOver:                activeButtonFg;          // Mouse over currently selected button text
-activeButtonSecondaryFg:           base1;
+activeButtonSecondaryFg:           base05;
 activeButtonSecondaryFgOver:       activeButtonSecondaryFg;
 activeLineFg:                      blue;
 activeLineFgError:                 red;
-lightButtonBg:                     base02;                  // Default button background
+lightButtonBg:                     base01;                  // Default button background
 lightButtonBgOver:                 #45525C;                 // Mouse over button background
 lightButtonBgRipple:               #5F6C76;                 // Mouse click button background
 lightButtonFg:                     windowActiveTextFg;
